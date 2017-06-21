@@ -20,4 +20,4 @@
 
 		$ vagrant ssh
 
-* Run the commands in ```/var/data/django.wq.shell.build.sh``` to install Wq
+* Run the commands in data/django.wq.shell.build.sh (```/var/data/django.wq.shell.build.sh```) to install Wq
