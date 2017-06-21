@@ -21,11 +21,3 @@
 		$ vagrant ssh
 
 * Run the commands in django-wqShell/django.wq.shell.build.sh to install Wq
-	
-#### Installs
-
-- python3
-- postgresql-9.5-postgis-2.2
-- apache2
-- nodejs-legacy
-- wq
