@@ -20,4 +20,4 @@
 
 		$ vagrant ssh
 
-* Run the commands in django-wqShell/django.wq.shell.build.sh to install Wq
+* Run the commands in ```django.wq.shell.build.sh``` to install Wq
