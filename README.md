@@ -16,6 +16,7 @@
 		$ cd django-wqShell/vagrant
 		$ vagrant up
 * Mounted folders
+		
 		/vagrant => django-wqShell/vagrant
 		/var/www => django-wqShell/www
     		/var/data => django-wqShell/data
