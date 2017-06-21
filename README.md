@@ -11,6 +11,12 @@
 ## Getting started
 
 > Vagrant installs server environment
+
+---
+	git clone https://github.com/iMMAP-Afg/django-wqShell.git
+	cd django-wqShell/vagrant
+	vagrant up
+
 	
 #### Installs
 
