@@ -10,7 +10,7 @@
 
 ## Getting started
 
-> Vagrant installs server environment
+> Vagrant installs server environment, run the commands in django-wqShell/django.wq.shell.build.sh to install Wq
 
 ---
 	git clone https://github.com/iMMAP-Afg/django-wqShell.git
