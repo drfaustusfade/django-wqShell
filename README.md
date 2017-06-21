@@ -15,7 +15,7 @@
 		$ git clone https://github.com/iMMAP-Afg/django-wqShell.git
 		$ cd django-wqShell/vagrant
 		$ vagrant up
-* Mounted folders
+* With mounted folders
 		
 		/vagrant => django-wqShell/vagrant
 		/var/www => django-wqShell/www
