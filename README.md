@@ -15,9 +15,14 @@
 		$ git clone https://github.com/iMMAP-Afg/django-wqShell.git
 		$ cd django-wqShell/vagrant
 		$ vagrant up
+* With mounted folders
+		
+		/vagrant => django-wqShell/vagrant
+		/var/www => django-wqShell/www
+		/var/data => django-wqShell/data
 
 * Once built, enter the virtual machine with vagrant ssh
 
 		$ vagrant ssh
 
-* Run the commands in ```/var/data/django.wq.shell.build.sh``` to install Wq
+* Run the commands in data/django.wq.shell.build.sh (```/var/data/django.wq.shell.build.sh```) to install Wq
