@@ -10,6 +10,8 @@
 # Install system libraries
 sudo apt-get update
 sudo apt-get install -y apache2 libapache2-mod-wsgi-py3 postgresql-9.5-postgis-2.2 python3-venv python-pip nodejs-legacy
+pip install --upgrade pip # optional
+pip install django
 
 # Create project directory and venv
 export PROJECTSDIR=/var/www #e.g. /var/www
@@ -22,7 +24,6 @@ sudo chown 'ubuntu' $PROJECTNAME
 cd $PROJECTNAME
 python3 -m venv venv
 . venv/bin/activate
-pip install --upgrade pip # optional
 
 # Install wq 1.0.0rc1 within venv
 pip install wq --pre
@@ -35,7 +36,7 @@ sudo sed -i "s/peer/md5/g" /etc/postgresql/9.5/main/pg_hba.conf
 sudo sed -i "s/local   all             postgres                                md5/local   all             postgres                                trust/g" /etc/postgresql/9.5/main/pg_hba.conf
 sudo sed -i "s/local   all             all                                     md5/local   all             all                                trust/g" /etc/postgresql/9.5/main/pg_hba.conf
 sudo sed -i '$a host    all             all             0.0.0.0/0               trust' /etc/postgresql/9.5/main/pg_hba.conf
-# sudo sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" /etc/postgresql/9.5/main/postgresql.conf
+sudo sed -i "s/#listen_addresses = 'localhost'/listen_addresses = '*'/g" /etc/postgresql/9.5/main/postgresql.conf
 sudo service postgresql restart
 createuser -U postgres $PROJECTNAME
 createdb -U postgres -O $PROJECTNAME $PROJECTNAME
